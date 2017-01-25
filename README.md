@@ -1,14 +1,14 @@
 ![](https://camo.githubusercontent.com/6ce15b81c1f06d716d753a61f5db22375fa684da/68747470733a2f2f67612d646173682e73332e616d617a6f6e6177732e636f6d2f70726f64756374696f6e2f6173736574732f6c6f676f2d39663838616536633963333837313639306533333238306663663535376633332e706e67)
 ## Introduction to Chrome DevTools
 ### Why is this important?
-Using Chrome DevTools is a great way to debug front-end files, measure performance and do opptimization of your website.
+Using Chrome DevTools is a great way to debug front-end files, measure performance and do optimization of your website.
 
 ### What are the objectives?
 In this lesson, we will go over the most important features of Chrome Developer Tools. By the end of this lesson, you will be able to:
 
  - Explain what DevTools is and what each tab does
  - Inspect HTML, CSS and JavaScript using Console and Element tabs
- - Inspect Network tab and discribe the provided data
+ - Inspect Network tab and describe the provided data
  - Use Source tab to run JavaScript and debug scripts
 
 ### Where should we be now?
@@ -16,7 +16,7 @@ In this lesson, we will go over the most important features of Chrome Developer 
 - You should alse be familiar with basics of HTML, CSS and JavaScript and how they work together to create a web page.
 
 ## What is DevTools?
-[DevTools](https://developers.google.com/web/tools/chrome-devtools/?utm_source=dcc&utm_medium=redirect&utm_campaign=2016q3#execution-control ) is a group of built in tool for developers in Chrome browser to do debugging and find detailed information about web apps and web pages. Itis consisted of multiple tabs and each one focus on a specific aspect of an app. You can explore the HTML/CSS used in the webpage, debug JavaScript, view network and load performance.
+[DevTools](https://developers.google.com/web/tools/chrome-devtools/?utm_source=dcc&utm_medium=redirect&utm_campaign=2016q3#execution-control ) is a group of built in tool for developers in Chrome browser to do debugging and find detailed information about web apps and web pages. It is consisted of multiple tabs and each one focus on a specific aspect of a web app. You can explore the HTML/CSS used in the webpage, debug JavaScript, view network and load performance.
  
 There are three way to open DevTools:
 
@@ -57,7 +57,7 @@ Go to <a href="https://google.com">google.com</a> and open the elements tab in y
 As you can see, this tab provides a hierarchical structure of the DOM. You can play around with the attributes,styles and find the size of each element in the page. This is a great way to find issues in the structural layer of your applications. You can also view the event listeners attached to elements.
 
 ## Console 
-###### Tool for log information during developemnt and interact with DOM elements 
+###### Tool to log information during development and interact with DOM elements 
 Similar to using Elements tab for finding bugs with the layout, we use console tab to view JavaScript error and log messages. You can run JavaScript code in the console as shown here:
 
 ![](http://jsforcats.com/images/console-variables.gif)
@@ -86,29 +86,49 @@ document.getElementById('element-id').style.visibility="hidden";
 
 **Tip** : you can have your console and elements tab open at the same time. How? go to you elements tab and press `esc`.
 
+### Challenge 1-1
+- go to challenge1 folder and open the index file
+ 
+As you can see I have lost my cats!! All three of them! and the elements page does not seem to be in the right place.
+
+##### Find my cats!
+  Explore the Elements tab and go through the DOM and their styles to find the three cats. Change the CSS styles to make the cats stick on the page. 
+  
+  Don't forget **not to refresh** the page or you will lose the changes.
+
+ 
+
 ## Source
-###### Tool for debuging JavaScript and loading local files
-In this tab you can view web page's resources. You can view the javascript files. When you receive an error in console, if you click on the filename on the right hand, it will take you to source tab and highlights where the error happend.
+###### Tool for debugging JavaScript and loading local files
+In this tab you can view web page's resources. You can view the javascript files. When you receive an error in console, if you click on the filename on the right hand, it will take you to source tab and highlights where the error happened.
 
 ![](https://abdulapopoola.files.wordpress.com/2016/03/snippets.gif?w=1200)
 [image source](https://abdulapopoola.com)
 ### Snippets
 Although we won't be using Snippets in our exercise, I would like to take a moment to show you what they do. Snippets allow you to run a small piece of code on any website.
 
-Try this:
+ 1- Create a new snippet file in source tab
+ 2- Enter this into your snippet:
 
 ```
  var bod = document.querySelector('body');
     bod.onclick = function(e){
     this.style.transform = 'rotateZ(-40deg)';
    }
+```
+ 3- make sure to save your new snippet and run it before testing it.
 
-``` 
- spend 5 minutes and modify any page that you like by writing a short snippet and share it with your friends.
+ spend 10 minutes and modify any page that you like by writing a short snippet and share it with your friends. You can go back to the previous lecture and use some of the DOM manipulation methods.
+ 
+ ### Challenge1-2
+   
+#####Name the cats
+   Aren't they cool?! if you click on them you should get an alert message from the cat introducing themselves. If they are not introducing themselves where would you look for possible bugs? There might not be visible error messages in the console but how else you can see script files?
+   
 ## Network
 ###### Tool to measure network performance
 
-This tab shows information related to network activities,like the timeline of all the resources(including CSS, JS, img and etc) begin loaded or HTTP requests and responses. One of the coolest things you can do with this tab is to record your page while it's being loaded and identify which resources are available sooner than the other. This will come in handy at optimization.
+This tab shows information related to network activities,like the timeline of all the resources(including CSS, JS, img  files) begin loaded or HTTP requests and responses. One of the coolest things you can do with this tab is to record your page while it's being loaded and identify which resources are available sooner than the other. This will come in handy at optimization.
 
 ![](https://developers.google.com/web/tools/chrome-devtools/images/before-reorder.png)
 [image source](https://developers.google.com/web/tools/chrome-devtools/settings)
@@ -136,39 +156,18 @@ check this out : [List of status codes](https://http.cat/)
 If one of the resources failed to load, by checking this tab you can figure our where is problem is. Is it a server side issue? Is it bad request from client? 
 
 
-## Individual Exsercise
-  Now it is time for you to try to debug a few errors! First:
-  
-  - clone down this repo : `git clone repo-url`
-  - navigate to your local repo : ` cd Intro-to-Chrome-DevTools`
-  - go to challenges folder : ` cd challenges`
- 
-
-### Challenge 1
- - go to the first challenge : ` cd challenge1`
- - open the index file in browser: `open index.html`
- 
-As you can see I have lost my cats!! All three of them! and the elements page doesnt seem to be in the right place.
-
-##### Step1: Find my cats!
-  Explore the Elements tab and go through the DOM and their styles to find the three cats. Change the CSS styles to make the cats stick on the page. 
-  
-  Dont forget **not to refresh** the page or you will loose the changes.
-  
-##### Step2: Name the cats
-   Aren't they cool?! if you click on them you should get an alert message from the cat introducing themselves. If they are not introducing themselves where would you look for possible bugs? There might not be visible error messages in the console but how else you can see script files?
- 
 ### Challenge 2
-- go back one folder from challenge1 to challenges: ` cd ..`
-- go to second challenge : ` cd challenge2`
-- open index file in browser ` open index.html`
+  Now it is time for you to try to debug a few errors! 
+  Go ahead and clone this repo and work on these challenges.
+- switch to challenge2 folder
+
 
 Start in the console and look for error messages. If you find anything, go back to your text editor and modify your js file and test again until you can role the dice.
 
 ## Conclusion
 As you can see Chrome DevTools is a powerful tool for web developers and knowing your way around it can help you pinpoint issues with your app faster. So make the DevTools your best friend!
 
-- Explain what the Elements tab is and what kind of information it provides?
+- Explain what the Elements tab does and what kind of information it provides?
 - If an event listener does not respond to clicking,where is the first place you check?
 - How can you write snippets in your browser? 
 - Explain what the networks tab does and record a page during loading process.
