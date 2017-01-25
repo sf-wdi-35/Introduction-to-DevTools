@@ -13,7 +13,6 @@ widow.onload = function(){
     var die  = document.createElement('div');
     die.setAttribute('class', 'die');
     die.innerHTML = random();
-    main.appendChild(die)
   };
 
   function rollDie() {
