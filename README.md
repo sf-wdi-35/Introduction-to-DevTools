@@ -120,7 +120,7 @@ Although we won't be using Snippets in our exercise, I would like to take a mome
 
  spend 10 minutes and modify any page that you like by writing a short snippet and share it with your friends. You can go back to the previous lecture and use some of the DOM manipulation methods.
  
- ### Challenge1-2
+### Challenge1-2
    
 #####Name the cats
    Aren't they cool?! if you click on them you should get an alert message from the cat introducing themselves. If they are not introducing themselves where would you look for possible bugs? There might not be visible error messages in the console but how else you can see script files?
