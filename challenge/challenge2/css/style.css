@@ -1,0 +1,15 @@
+body {
+  background-color: gray;
+  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQYV2NkIBIwYlE3EyqWjiyHrBCmAF0vWAO6QpAgsokgNlaF2FxMvkKQaXCr0NgobiRJIc5QxRaOWBUDACTgCwtehKeHAAAAAElFTkSuQmCC);
+}
+
+.die {
+  width: 4em;
+  height: 4em;
+  line-height: 4em;
+  background-color: white;
+  margin: 1em;
+  display: inline-block;
+  font-size: 2em;
+  text-align: center;
+}
