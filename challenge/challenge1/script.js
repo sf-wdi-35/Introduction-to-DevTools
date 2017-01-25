@@ -11,19 +11,18 @@ window.onload=function(){
     if(!pillow_flag){cat_count++; pillow_flag=true;}
   });
 
-  punchy.addEventListener('clck',function(){
+  punchy.attachEventListener('click',function(){
     introduceMe("Punchy");
-    if(!punchy_flag){cat_count++; pillow_flag=true;}
+    if(!punchy_flag){cat_count++; punchy_flag=true;}
   });
 
   snoop.addEventListener('click',function(){
-    i
-    if(!snoop_flag){cat_count++; pillow_flag=true;}
+    if(!snoop_flag){cat_count++; snoop_flag=true;}
   });
 
   function introduceMe(name){
     alert("Hi I'm "+name+"!");
-    console.log('cat count:',cat_count);
+    console.log('Hi Im ',+name+'  -  cat count:',cat_count);
   }
 
 };
