@@ -16,9 +16,9 @@ In this lesson, we will go over the most important features of Chrome Developer 
 - You should alse be familiar with basics of HTML, CSS and JavaScript and how they work together to create a web page.
 
 ## What is DevTools?
-[DevTools](https://developers.google.com/web/tools/chrome-devtools/?utm_source=dcc&utm_medium=redirect&utm_campaign=2016q3#execution-control ) is a group of built in tool for developers in Chrome browser to do debugging and find detailed information about web apps and web pages. It is consisted of multiple tabs and each one focus on a specific aspect of a web app. You can explore the HTML/CSS used in the webpage, debug JavaScript, view network and load performance.
+[DevTools](https://developers.google.com/web/tools/chrome-devtools/?utm_source=dcc&utm_medium=redirect&utm_campaign=2016q3#execution-control ) is a group of built in tools for developers in Chrome browser to do debugging and find detailed information about web apps and web pages. It is consisted of multiple tabs and each one focus on a specific aspect of a web app. You can explore the HTML/CSS used in the webpage, debug JavaScript, view network and load performance.
  
-There are three way to open DevTools:
+There are three ways to open DevTools:
 
 1. open your Chrome browser and click on the three bar icon on the right side of your address bar. Go to More Tools -> Developer Tools.
 2. Right click anywhere on the page and select Inspect. This method will open the Elements tab and highlights the selected element on the page.
@@ -46,9 +46,9 @@ There are three way to open DevTools:
 ###### Tool for inspecting layout
  In this tab you can inspect:
  
- - HTML structure of the page
+ - HTML structure
  - CSS styles applied to each element
- - Box Model
+ - CSS Box Model
  - Event Listeners
  - Element Properties
 
@@ -63,9 +63,9 @@ Similar to using Elements tab for finding bugs with the layout, we use console t
 ![](http://jsforcats.com/images/console-variables.gif)
 [image source](http://jsforcats.com/)
 
-#### It's your turn!
+#### It's your turn now!
 
-Spend a few minutes and go through [Command Line API Reference](https://developers.google.com/web/tools/chrome-devtools/console/command-line-reference) and learn how to use console and interact with DOM. 
+Spend a few minutes and go through [Command Line API Reference](https://developers.google.com/web/tools/chrome-devtools/console/command-line-reference) and learn how to use console api and interact with DOM. 
 
 Going back to google.com, let's open the console:
 
@@ -92,11 +92,9 @@ document.getElementById('element-id').style.visibility="hidden";
 As you can see I have lost my cats!! All three of them! and the elements page does not seem to be in the right place.
 
 ##### Find my cats!
-  Explore the Elements tab and go through the DOM and their styles to find the three cats. Change the CSS styles to make the cats stick on the page. 
+  Explore the Elements tab and go through the DOM and their  CSS styles to find the three cats. Change the CSS styles to make the cats stick on the page. 
   
   Don't forget **not to refresh** the page or you will lose the changes.
-
- 
 
 ## Source
 ###### Tool for debugging JavaScript and loading local files
@@ -133,14 +131,14 @@ This tab shows information related to network activities,like the timeline of al
 ![](https://developers.google.com/web/tools/chrome-devtools/images/before-reorder.png)
 [image source](https://developers.google.com/web/tools/chrome-devtools/settings)
 
-When DOM content is ready, a vertical blue line will appear in the timeline section. You can alo find the the exact timing on the bottom of the page.
+When DOM content is ready, a vertical blue line will appear in the timeline section. You can also find the the exact timing on the bottom of the page.
 A red vertical line in timeline shows when the window.onload event is ready.
 
 ![](https://developers.google.com/web/tools/chrome-devtools/network-performance/imgs/domcontentloaded.png)
 
 [image source](https://developers.google.com/web/tools/chrome-devtools/settings) 
 
-When inspecting this tab it is important to be familiar with  response status codes:
+When inspecting this tab, it is important to be familiar with  response status codes:
 
  - 1xx : Informational
  - 2xx : Successful
@@ -160,7 +158,6 @@ If one of the resources failed to load, by checking this tab you can figure our 
   Now it is time for you to try to debug a few errors! 
   Go ahead and clone this repo and work on these challenges.
 - switch to challenge2 folder
-
 
 Start in the console and look for error messages. If you find anything, go back to your text editor and modify your js file and test again until you can role the dice.
 
